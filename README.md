@@ -10,7 +10,10 @@ Boost Snapchat Score While working on something else.
 - In `path_to_chrome` fill out the path with your `Chrome` installation.
 - In `path_to_user_data` fill out with the path to `userdata`.
 
-- This can be found from by entering `run` and typing `%LOCALAPPDATA%\Google\Chrome\User Data.`
+- This can be found from by entering `run` 
+- Open run by pressing <kbd>ctrl</kbd> + <kbd>r</kb>
+
+and typing `%LOCALAPPDATA%\Google\Chrome\User Data.`
 - Copy the directory and paste it into the `userdata` field.
 
 
