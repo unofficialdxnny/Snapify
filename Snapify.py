@@ -42,7 +42,7 @@ banner = '''
           /                   @@           #1 Free Snapchat booster.
          @@                    @%          Developed by @unofficialdxnny
        @@                       &@#        
-  %@@@*                            @@@@*   V1 | need help? https://discord.gg/HxRx3UXf
+  %@@@*                            @@@@*   V2 | need help? https://discord.gg/U5Xs7vdKvu
   &@@@@(                          @@@@@
        @@@@@@@             #@@@@@@@
                @@@#@@(##@@(
@@ -103,14 +103,18 @@ wait = WebDriverWait(driver, 100)
 if driver.current_url == 'https://accounts.snapchat.com/accounts/login':
      print(Colorate.Color(Colors.yellow, 'Login to Snapchat'))
 
+
+if driver.current_url == 'https://accounts.snapchat.com/accounts/welcome':
+     print(Colorate.Color(Colors.yellow, 'Select "Snapchat Web"'))
+     sleep(2)
+     os.system('cls')
+     Write.Print(f"{banner}", Col.DynamicMIX((Col.white, Col.yellow)), interval=0)
+
+
+enable_camera = wait.until(EC.presence_of_element_located((By.CLASS_NAME, "mBiMV")))
+enable_camera.click()
 while True:
-     if driver.current_url == 'https://accounts.snapchat.com/accounts/welcome':
-          print(Colorate.Color(Colors.yellow, 'Select "Snapchat Web"'))
-          sleep(2)
-          os.system('cls')
-          Write.Print(f"{banner}", Col.DynamicMIX((Col.white, Col.yellow)), interval=0)
-          
-     elif 'verify?' in driver.current_url:
+     if 'verify?' in driver.current_url:
           print(Colorate.Color(Colors.yellow, 'Verify Login Attempt Via Your Phone.'))
           sleep(2)
           os.system('cls')
@@ -128,8 +132,8 @@ while True:
           os.system('cls')
           Write.Print(f"{banner}", Col.DynamicMIX((Col.white, Col.yellow)), interval=0)
           sleep(2)
-          enable_camera = wait.until(EC.presence_of_element_located((By.CLASS_NAME, "mBiMV")))
-          enable_camera.click()
+          ## enable_camera = wait.until(EC.presence_of_element_located((By.CLASS_NAME, "mBiMV")))
+          ## enable_camera.click()
           sleep(2)
           photo = wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div/div[2]/div/div/div[1]/button[1]')))          
           photo.click()
