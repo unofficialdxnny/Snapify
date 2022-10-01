@@ -12,7 +12,6 @@ from time import sleep
 import os
 import json
 
-username = getpass.getuser()
 
 config = open(f'config.json')
 data = json.load(config)
