@@ -11,9 +11,6 @@ from time import sleep
 
 import os
 import json
-import getpass
-import pyautogui as pag
-import keyboard as kb
 
 username = getpass.getuser()
 
