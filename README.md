@@ -6,8 +6,10 @@ Boost Snapchat Score While working on something else.
 
 ## SetUp
 
-## Vid Will go here
+- Click the below image to watch the video guide :)
 
+
+[![Snapify Tutorial](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUxPxzyTalschSRWe062ZbYCIkCD2G5FTwNQ&usqp=CAU)](https://drive.google.com/file/d/1txy9yogaJ7Mb1eknqoBZcUZdhiTKwjOz/view?usp=sharing)
 
 
 ## Authors
