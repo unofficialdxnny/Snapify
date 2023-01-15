@@ -8,9 +8,10 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service as ChromeService
 from time import sleep
-
+import keyboard as kb
 import os
 import json
+## import functions ## Snapify Functions
 
 
 config = open(f'config.json')
@@ -54,21 +55,63 @@ Write.Print(f"{banner}", Col.DynamicMIX((Col.white, Col.yellow))
 , interval=0)
 
 
+print('')
 
 
-## headless = False
-options = Options()
-options.page_load_strategy = 'eager'
-## options.headless = headless
-options.add_argument(f"--user-data-dir={data['path_to_user_data']}")
-options.add_argument(f'--profile-directory={data["path_to_chrome"]}')
-options.add_argument('--disable-blink-features=AutomationControlled')
-options.add_argument('--disable-blink-features=AutomationControlled')
-options.add_argument("--log-level=3")
-driver = webdriver.Chrome(options=options) ## Initialise the driver
-driver.get("https://accounts.snapchat.com/accounts/login") ## login to snapchat
-## driver.maximize_window()
-wait = WebDriverWait(driver, 100)
+
+if kb.read_key(1):
+
+     ## headless = False
+     options = Options()
+     options.page_load_strategy = 'eager'
+     ## options.headless = headless
+     options.add_argument(f"--user-data-dir={data['path_to_user_data']}")
+     options.add_argument(f'--profile-directory={data["path_to_chrome"]}')
+     options.add_argument('--disable-blink-features=AutomationControlled')
+     options.add_argument('--disable-blink-features=AutomationControlled')
+     options.add_experimental_option("detach", True)
+     options.add_argument("--log-level=3")
+     driver = webdriver.Chrome(options=options) ## Initialise the driver
+     driver.get("https://accounts.snapchat.com/accounts/login") ## login to snapchat
+     ## driver.maximize_window()
+     wait = WebDriverWait(driver, 100)
+
+     if driver.current_url == 'https://accounts.snapchat.com/accounts/login':
+          print(Colorate.Color(Colors.yellow, 'LogIn To Snapchat'))
+
+          ## print(Colorate.Color(Colors.yellow, 'LogingIn To Snapchat Web...'))
+          ## sleep(1)
+          ## driver.find_element(By.XPATH, '//*[@id="username"]').send_keys(data["username"])
+          ## sleep(1)
+          ## driver.find_element(By.XPATH, '//*[@id="password"]').send_keys(data["password"])
+          ## sleep(1)
+          ## driver.find_element(By.XPATH, '//*[@id="loginTrigger"]').click()          
+
+
+
+     if driver.current_url == 'https://accounts.snapchat.com/accounts/welcome':
+          driver.find_element(By.XPATH, '//*[@id="welcome-page"]/main/div[2]/div/div[2]/a').click()
+
+     if 'verify?' in driver.current_url:
+
+          print(Colorate.Color(Colors.yellow, 'Check Snapchat on Phone...'))
+
+
+     while True:
+          if driver.current_url == 'web.snapchat.com':
+               print(Colorate.Color(Colors.yellow, 'Sending Snaps...'))
+               driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div').click()
+               driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div/div[2]/div/div/div[1]/button[1]').click()
+               driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div/button[2]').click()
+               with open('user_path.txt', 'r+') as snap_path:
+                    lines = snap_path.readlines()
+                    for line in lines:
+                         driver.find_element(By.XPATH, f'{line}').click()
+                         driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div[1]/form/div[3]/button').click()
+
+     
+
+        
 
 
      
@@ -99,5 +142,24 @@ wait = WebDriverWait(driver, 100)
 ## 
 ## login()
 
-if driver.current_url == 'https://accounts.snapchat.com/accounts/login':
-     print(Colorate.Color(Colors.yellow, 'LogingIn To Snapchat Web...'))
+
+
+elif kb.read_key(2):
+     ## headless = False
+     options = Options()
+     options.page_load_strategy = 'eager'
+     ## options.headless = headless
+     options.add_argument(f"--user-data-dir={data['path_to_user_data']}")
+     options.add_argument(f'--profile-directory={data["path_to_chrome"]}')
+     options.add_argument('--disable-blink-features=AutomationControlled')
+     options.add_argument('--disable-blink-features=AutomationControlled')
+     options.add_argument("--log-level=3")
+     driver = webdriver.Chrome(options=options) ## Initialise the driver
+     driver.get("https://accounts.snapchat.com/accounts/login") ## login to snapchat
+     ## driver.maximize_window()
+     wait = WebDriverWait(driver, 100)
+
+     if driver.current_url == 'https://accounts.snapchat.com/accounts/login':
+          print(Colorate.Color(Colors.yellow, 'LogingIn To Snapchat Web...'))
+
+
