@@ -43,6 +43,9 @@ banner = '''
        @@@@@@@             #@@@@@@@
                @@@#@@(##@@(
 
+
+     [1] Snap Everyone
+     [2] Snap XPath
 '''
 
 snaps_sent = 0
@@ -96,3 +99,5 @@ wait = WebDriverWait(driver, 100)
 ## 
 ## login()
 
+if driver.current_url == 'https://accounts.snapchat.com/accounts/login':
+     print(Colorate.Color(Colors.yellow, 'LogingIn To Snapchat Web...'))
