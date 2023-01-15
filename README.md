@@ -14,7 +14,6 @@ Boost Snapchat Score While working on something else.
 
 ## Contributors
 
-<a href="https://github.com/unofficialdxnny/Snapify/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=unofficialdxnny/Snapify" />
+<a href = "https://github.com/Tanu-N-Prabhu/Python/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo = unofficialdxnny/Snapify"/>
 </a>
-
