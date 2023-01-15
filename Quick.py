@@ -6,7 +6,13 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service as ChromeService
 
 
-driver = webdriver.Chrome() ## Initialise the driver
+PROXY = '1.1.189.58:8080'
+
+
+
+options = Options()
+options.add_argument('--proxy-server=%s' % PROXY)
+driver = webdriver.Chrome(options=options) ## Initialise the driver
 driver.get("https://accounts.snapchat.com/accounts/login") ## login to snapchat
 driver.maximize_window()
 wait = WebDriverWait(driver, 100)
