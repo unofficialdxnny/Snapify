@@ -39,7 +39,7 @@ banner = '''
           /                   @@           #1 Free Snapchat booster.
          @@                    @%          Developed by @unofficialdxnny
        @@                       &@#        
-  %@@@*                            @@@@*   V2 | need help? @unofficialdxnny#8301
+  %@@@*                            @@@@*   V2 | need help? Join Server : https://discord.gg/8WyFZF3kqn
   &@@@@(                          @@@@@
        @@@@@@@             #@@@@@@@
                @@@#@@(##@@(
