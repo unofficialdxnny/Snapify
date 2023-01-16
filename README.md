@@ -30,5 +30,7 @@ Now in the `users_path` file you need to paste in each line the xpath to your us
 
 ### Visual Guide
 
-head over to <a href="https://web.snapchat.com/">Snapchat Web</a>
+- Head over to <a href="https://web.snapchat.com/">Snapchat Web</a>
+
+![image](https://user-images.githubusercontent.com/82535503/212619814-110163d5-49c7-4961-94e2-b490e0fcfdb1.png)
 
