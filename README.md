@@ -34,3 +34,23 @@ Now in the `users_path` file you need to paste in each line the xpath to your us
 
 ![image](https://user-images.githubusercontent.com/82535503/212619814-110163d5-49c7-4961-94e2-b490e0fcfdb1.png)
 
+- Click the `Send To` button
+![image](https://user-images.githubusercontent.com/82535503/212620405-5c88c397-e02c-4b9a-b806-967ef40449ed.png)
+
+- Right click one of the targets and click on Inspect
+
+![image](https://user-images.githubusercontent.com/82535503/212620897-52824009-d6d7-45ac-9556-964b68de4f7e.png)
+
+- Hover over the highlighted `element` and than go up about two elements so the whole user is highlighted
+
+![image](https://user-images.githubusercontent.com/82535503/212621236-ff567b99-4fc6-4f4b-a8e6-63c77a78fa04.png)
+
+- Right click that element and hover over `copy` and click on `copy xpath`
+
+![image](https://user-images.githubusercontent.com/82535503/212621428-76b7271f-f307-4a28-96e9-7595df5ba66f.png)
+
+- Paste this code into your `users_path` file.
+- You can repeat this process for as many users you want.
+
+
+
