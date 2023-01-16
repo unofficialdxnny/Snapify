@@ -70,16 +70,16 @@ if kb.read_key(1):
      options.add_argument('--disable-blink-features=AutomationControlled')
      options.add_argument('--disable-blink-features=AutomationControlled')
      options.add_experimental_option("detach", True)
-     options.add_argument("--log-level=3")
+     options.add_argument("--log-level=OFF")
      driver = webdriver.Chrome(options=options) ## Initialise the driver
      driver.get("https://web.snapchat.com") ## login to snapchat
      ## driver.maximize_window()
      wait = WebDriverWait(driver, 100)
 
-     sleep(5)
-
+     sleep(2)
+     print(Colorate.Color(Colors.yellow, 'Sending Snaps...'))
      while True:
-          print(Colorate.Color(Colors.yellow, 'Sending Snaps...'))
+          
           driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div').click()
           sleep(5)
           driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div/div[2]/div/div/div[1]/button[1]').click()
