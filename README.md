@@ -30,3 +30,5 @@ Now in the `users_path` file you need to paste in each line the xpath to your us
 
 ### Visual Guide
 
+head over to <a href="https://web.snapchat.com/">Snapchat Web</a>
+
