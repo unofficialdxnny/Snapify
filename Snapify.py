@@ -69,25 +69,32 @@ if kb.read_key(1):
      options.add_argument(f'--profile-directory={data["path_to_chrome"]}')
      options.add_argument('--disable-blink-features=AutomationControlled')
      options.add_argument('--disable-blink-features=AutomationControlled')
-     options.add_experimental_option("detach", True)
      options.add_argument("--log-level=OFF")
+     ## options.add_experimental_option("detach", True)
+     
      driver = webdriver.Chrome(options=options) ## Initialise the driver
      driver.get("https://web.snapchat.com") ## login to snapchat
      ## driver.maximize_window()
      wait = WebDriverWait(driver, 100)
 
-     sleep(2)
-     print(Colorate.Color(Colors.yellow, 'Sending Snaps...'))
-     while True:
+   
+
+     
+     Write.Print(f"Press 'enter' when snapchat has loaded up...", Col.DynamicMIX((Col.white, Col.yellow)), interval=0)
+     if kb.read_key('enter'):
+          while True:
+               
+               print(Colorate.Color(Colors.yellow, 'Sending Snaps...'))
+
           
-          driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div').click()
-          sleep(5)
-          driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div/div[2]/div/div/div[1]/button[1]').click()
-          sleep(5)
-          driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div/button[2]').click()
-          with open('users_path.txt', 'r+') as snap_path:
-               lines = snap_path.readlines()
-               for line in lines:
-                    driver.find_element(By.XPATH, f'{line}').click()
+               driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div').click()
+               sleep(5)
+               driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div/div[2]/div/div/div[1]/button[1]').click()
+               sleep(5)
+               driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div/button[2]').click()
+               with open('users_path.txt', 'r+') as snap_path:
+                    lines = snap_path.readlines()
+                    for line in lines:
+                         driver.find_element(By.XPATH, f'{line}').click()
           
-          driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div[1]/form/div[3]/button').click()
+               driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div[1]/form/div[3]/button').click()
