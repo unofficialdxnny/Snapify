@@ -15,17 +15,11 @@ import json
 from pypresence import Presence
 import time
 
-client_id = '1064942142692270120'  # Fake ID, put your real one here
-RPC = Presence(client_id)  # Initialize the client class
-RPC.connect() # Start the handshake loop
 
-start_time=time.time() 
-RPC.update(state="By unofficialdxnny", details="Boosting SnapScore", large_image="new_project", buttons=[{"label": "Server", "url": "https://discord.gg/8WyFZF3kqn"}], start=start_time)
 
-config = open(f'config.json')
+
+config = open('config.json', 'r')
 data = json.load(config)
-
-
 
 ## driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 
