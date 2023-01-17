@@ -12,7 +12,15 @@ import keyboard as kb
 import os
 import json
 ## import functions ## Snapify Functions
+from pypresence import Presence
+import time
 
+client_id = '1064942142692270120'  # Fake ID, put your real one here
+RPC = Presence(client_id)  # Initialize the client class
+RPC.connect() # Start the handshake loop
+
+start_time=time.time() 
+RPC.update(state="By unofficialdxnny", details="Boosting SnapScore", large_image="new_project", buttons=[{"label": "Server", "url": "https://discord.gg/8WyFZF3kqn"}], start=start_time)
 
 config = open(f'config.json')
 data = json.load(config)
@@ -94,4 +102,4 @@ if kb.read_key(1):
                for line in lines:
                     driver.find_element(By.XPATH, f'{line}').click()
           
-                    driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div[1]/form/div[3]/button').click()
+          driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div[1]/form/div[3]/button').click()
