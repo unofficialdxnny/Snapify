@@ -1,5 +1,14 @@
 {
-    "path_to_chrome": "C:/Program Files/Google/Chrome/Application/chrome.exe",
-    "path_to_user_data": "C:/Users/ahmed/AppData/Local/Google/Chrome/User Data"
+    "chrome_setup"{
+        "path_to_chrome": "C:/Program Files/Google/Chrome/Application/chrome.exe",
+        "path_to_user_data": "C:/Users/ahmed/AppData/Local/Google/Chrome/User Data"
+    },
+    {
+        "username_list"{
+            "usernames_file": "@.txt"
+        }
+        
+    }
+
 
 }   
