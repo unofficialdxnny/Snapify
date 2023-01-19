@@ -14,7 +14,17 @@ import json
 ## import functions ## Snapify Functions
 from pypresence import Presence
 import time
+from pypresence import Presence
+import time
 
+client_id = '1234567890'  # Fake ID, put your real one here
+RPC = Presence(client_id)  # Initialize the client class
+RPC.connect() # Start the handshake loop
+
+start_time=time.time() 
+
+
+RPC.update(state="Boosting SnapScore", details="By unofficialdxnny", large_image="new_project", buttons=[{"label": "PloitZ Server", "url": ""}], start=start_time)
 
 
 
@@ -45,8 +55,9 @@ banner = '''
        @@@@@@@             #@@@@@@@
                @@@#@@(##@@(
      
-     [1] Snap XPath
+
 '''
+
 
 snaps_sent = 0
 os.system('cls & title Snapify ~ unofficialdxnny')
@@ -70,3 +81,30 @@ driver = webdriver.Chrome(options=options) ## Initialise the driver
 driver.get("https://web.snapchat.com") ## login to snapchat
 ## driver.maximize_window()
 wait = WebDriverWait(driver, 100)
+
+
+Write.Print(f"Press Enter Key When web.snapchat.com is loaded...", Col.DynamicMIX((Col.white, Col.yellow)) 
+, interval=0)
+input('')
+
+
+driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div').click() ## enable camera
+
+while True:
+     sleep(2)
+     driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div/div[2]/div/div/div[1]/button[1]').click() ## capture
+     sleep(2)
+     driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div/button[2]').click() ## sendto
+
+     driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div[1]/form/div[2]/div/div/div/input').click() ## searchbar
+
+     with open('@.txt', 'r+') as users:
+          lines = users.readlines()
+          for line in lines:
+               driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div[1]/form/div[2]/div/div/div/input').send_keys('') ## searchbar
+               driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div[1]/form/ul/li[2]/div').click()
+
+
+     driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div[1]/form/div[3]/button').click()
+
+
