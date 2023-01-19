@@ -63,11 +63,10 @@ options.add_argument(f'--profile-directory={data["path_to_chrome"]}')
 options.add_argument('--disable-blink-features=AutomationControlled')
 options.add_argument('--disable-blink-features=AutomationControlled')
 options.add_argument("--log-level=OFF")
-     ## options.add_experimental_option("detach", True)
-     
-     driver = webdriver.Chrome(options=options) ## Initialise the driver
-     driver.get("https://web.snapchat.com") ## login to snapchat
-     ## driver.maximize_window()
-     wait = WebDriverWait(driver, 100)
+options.add_experimental_option("detach", True)
+options.add_experimental_option('excludeSwitches', ['enable-logging'])
 
-   
+driver = webdriver.Chrome(options=options) ## Initialise the driver
+driver.get("https://web.snapchat.com") ## login to snapchat
+## driver.maximize_window()
+wait = WebDriverWait(driver, 100)

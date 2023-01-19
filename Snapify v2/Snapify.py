@@ -69,7 +69,7 @@ if kb.read_key(1):
      options.add_argument('--disable-blink-features=AutomationControlled')
      options.add_argument('--disable-blink-features=AutomationControlled')
      options.add_argument("--log-level=OFF")
-     ## options.add_experimental_option("detach", True)
+     options.add_experimental_option("detach", True)
      
      driver = webdriver.Chrome(options=options) ## Initialise the driver
      driver.get("https://web.snapchat.com") ## login to snapchat
