@@ -14,8 +14,7 @@ import json
 ## import functions ## Snapify Functions
 from pypresence import Presence
 import time
-from pypresence import Presence
-import time
+
 
 client_id = '1234567890'  # Fake ID, put your real one here
 RPC = Presence(client_id)  # Initialize the client class
