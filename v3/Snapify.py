@@ -100,8 +100,11 @@ while True:
      with open('@.txt', 'r+') as users:
           lines = users.readlines()
           for line in lines:
+               sleep(2)
                driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div[1]/form/div[2]/div/div/div/input').clear() ## searchbar
+               sleep(2)
                driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div[1]/form/div[2]/div/div/div/input').send_keys(line) ## searchbar
+               sleep(2)
                driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div[1]/form/ul/li[2]/div').click()
 
 
