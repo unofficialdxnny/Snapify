@@ -16,14 +16,14 @@ from pypresence import Presence
 import time
 
 
-client_id = '1234567890'  # Fake ID, put your real one here
+client_id = '1064942142692270120'  # Fake ID, put your real one here
 RPC = Presence(client_id)  # Initialize the client class
 RPC.connect() # Start the handshake loop
 
 start_time=time.time() 
 
 
-RPC.update(state="Boosting SnapScore", details="By unofficialdxnny", large_image="new_project", buttons=[{"label": "PloitZ Server", "url": ""}], start=start_time)
+RPC.update(state="Boosting SnapScore", details="By unofficialdxnny", large_image="new_project", buttons=[{"label": "PloitZ Server", "url": "https://discord.gg/8WyFZF3kqn"}], start=start_time)
 
 
 
@@ -100,7 +100,8 @@ while True:
      with open('@.txt', 'r+') as users:
           lines = users.readlines()
           for line in lines:
-               driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div[1]/form/div[2]/div/div/div/input').send_keys('') ## searchbar
+               driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div[1]/form/div[2]/div/div/div/input').clear() ## searchbar
+               driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div[1]/form/div[2]/div/div/div/input').send_keys(line) ## searchbar
                driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div[1]/form/ul/li[2]/div').click()
 
 
