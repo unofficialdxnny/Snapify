@@ -12,18 +12,7 @@ import keyboard as kb
 import os
 import json
 ## import functions ## Snapify Functions
-from pypresence import Presence
-import time
 
-
-client_id = '1064942142692270120'  # Fake ID, put your real one here
-RPC = Presence(client_id)  # Initialize the client class
-RPC.connect() # Start the handshake loop
-
-start_time=time.time() 
-
-
-RPC.update(state="Boosting SnapScore", details="By unofficialdxnny", large_image="new_project", buttons=[{"label": "PloitZ Server", "url": "https://discord.gg/8WyFZF3kqn"}], start=start_time)
 
 
 
