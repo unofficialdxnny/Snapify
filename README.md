@@ -34,3 +34,8 @@ Snapchat detects the chromedriver as a automated process and wont let you login,
 ```
 
 Now in the `@.txt` file you need to paste in each line the username of your target user. You repeat this for as many users as you want, just dont leave a lines space after  a username as that will cause `Snapify` to crash.
+
+
+
+
+
