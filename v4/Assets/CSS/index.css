@@ -3,10 +3,9 @@ body {
   overflow-y: hidden;
   background-color: #1a2227;
 }
-  
-  img {
-    width: 1200px; /* takes the 100 % width of its container (.box div)*/
-    height: 720px; /* takes the 100 % height of its container (.box div)*/
-    object-fit: center;
-    
-  }
+
+
+.logo {
+  position: absolute;
+  right: 10px;
+}
