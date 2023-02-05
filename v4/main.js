@@ -9,6 +9,8 @@ const createWindow = () => {
       maxWidth: 1200,
       maxHeight: 700,
       fullscreenable: false,
+      minHeight: 1200,
+      minWidth: 700
       
       
     })
@@ -16,6 +18,7 @@ const createWindow = () => {
     win.loadFile('index.html')
   }
 
+  
   app.whenReady().then(() => {
     createWindow()
   })
