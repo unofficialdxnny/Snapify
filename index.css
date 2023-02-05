@@ -1,171 +1,19 @@
-
-.prevent-select {
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
-  }
-
-  
-body{
-    background-color: #1e1e1e;
-    margin: 0;
-    overflow: hidden;
-    
-    
-}
+html, body {margin: 0; height: 100%; overflow: hidden}
 
 
-.banner {
-    color: #ffab38;
-    margin: 0;
-    
-    
-}
-  
-  .terminal{
-    animation-name: fadeOut;
-    animation-duration: 1ms;
-    animation-fill-mode: forwards;
-    animation-delay: 10000ms;
-  }
-  
-  p {
-    font-family: "Helvetica", Sans-Serif;
-    display: block;
-    width: 0px;
-    margin: 0;
-    font-size:1.2rem;
-    color: #ffab38;;
-    overflow: hidden;
-    font-family: monospace;
-    white-space: nowrap;
-    animation-name: writeText;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-  }
-  
-  h1{
-    font-family: "Helvetica", Sans-Serif;
-    text-align: center;
-    opacity: 0;
-    color: whitffab38e;
-    font-family:sans-serif;
-    animation-name: fadeIn;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-    animation-delay: 10500ms;
-    color: #ffab38;
-    text-transform: uppercase;
-    
-  }
-  
-  .delay1 {
-    animation-delay: 2000ms;
-    color: red;
-  }
-  .delay2 {
-    animation-delay: 3000ms;
-  }
-  .delay3 {
-    animation-delay: 4000ms;
-    color: red;
-  }
-  .delay4 {
-    animation-delay: 5000ms;
-  }
-  .delay5 {
-    animation-delay: 6000ms;
-    color: red;
-  }
-  .delay6 {
-    animation-delay: 7000ms;
-  }
-  .delay7 {
-    animation-delay: 8000ms;
-    color: red;
-  }
-  .delay8 {
-    animation-delay: 9000ms;
-  }
-  
-  /* Standard syntax */
-  @keyframes writeText {
-    from {
-      width: 0;
-    }
-    to {
-      width: 200px;
-    }
-  }
-  
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-    }
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  #loader {
+body {
     width: 100%;
-    height: 2px;
-    background-color: rgb(87, 87, 87);
-  }
-  
-  #loaded {
-    height: 2px;
-    width: 0px;
-    background-color: #ffab38;;
-    animation-name: load;
-    animation-duration: 3000ms;
-    animation-fill-mode: forwards;
-  }
-  
-  @keyframes load {
-    0% {
-      width: 0;
-    }
-    50% {
-      width: 70%;
-    }
-    70% {
-      width: 100%;
-    }
-    80% {
-      opacity: 1;
-    }
-    100% {
-      width: 100%;
-      opacity: 0;
-    }
-  }
-
-.github {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-right: 0px;
-bottom: 0px;
+    height: 100%;
+    
+    background-size: 100%;   
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+    display: none;
+  }
+  
 
-.instagram {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-right: 35px;
-bottom: 0px;
+img {
+    object-fit: fill;
 }
-
-
-
