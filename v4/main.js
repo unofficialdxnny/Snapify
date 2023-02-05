@@ -6,8 +6,7 @@ const createWindow = () => {
       height: 700,
       autoHideMenuBar: true,
       icon:'./Assets/Images/favicon.png',
-      maxWidth: 1200,
-      maxHeight: 700,
+      
       fullscreenable: false,
       minHeight: 1200,
       minWidth: 700
