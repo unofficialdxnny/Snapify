@@ -8,8 +8,10 @@ const createWindow = () => {
       icon:'./Assets/Images/favicon.png',
       
       fullscreenable: false,
-      minHeight: 1200,
-      minWidth: 700
+      minHeight: 700,
+      minWidth: 1200,
+      maxHeight: 700,
+      maxWidth: 1200
       
       
     })
