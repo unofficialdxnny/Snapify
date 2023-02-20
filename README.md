@@ -4,11 +4,9 @@ Boost Snapchat Score While working on something else.
 
 ## Video Tutorial
 
-https://user-images.githubusercontent.com/82535503/215324253-8fa89633-5b99-488d-aaf7-7b8c0de0610a.mp4
 
+<a href="https://www.youtube.com/watch?v=8zqsrlOX6Gw"><img src="https://user-images.githubusercontent.com/82535503/220074013-892ed57c-b435-46a5-9fc5-e2ff86e4fabc.png"></a>    
 
-
-![Snapify](https://user-images.githubusercontent.com/82535503/212598383-335c74a0-3a99-4cf3-9930-4f17999a29b8.png)
 
 
 
