@@ -88,13 +88,13 @@ while True:
 
         x = 0
 
-        while True
+        while x != data["rounds_for_snaps"]:
             os.system('cls')
             Write.Print(f"{banner}", Col.DynamicMIX((Col.white, Col.yellow)) 
 , interval=0)
             options = Options()
             options.page_load_strategy = 'eager'
-            ## options.headless = headless
+            options.headless = True
             options.add_argument(f"--user-data-dir={data['path_to_user_data']}")
             options.add_argument(f'--profile-directory={data["path_to_chrome"]}')
             options.add_argument('--disable-blink-features=AutomationControlled')
@@ -106,8 +106,8 @@ while True:
             ## driver.maximize_window()
             wait = WebDriverWait(driver, 100)
             driver.get("https://web.snapchat.com") ## login to snapchat
-            input('Press Enter When Page Ready...')
-    
+
+            sleep(5)    
             driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div').click()
             sleep(5)
             driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div/div[2]/div/div/div[1]/button[1]').click()
@@ -119,6 +119,8 @@ while True:
                     driver.find_element(By.XPATH, f'{line}').click()
               
             driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div[1]/form/div[3]/button').click()
+
+            x = x+1
 
 
 

@@ -56,7 +56,7 @@ Write.Print(f"{banner}", Col.DynamicMIX((Col.white, Col.yellow))
 ## headless = False
 options = Options()
 options.page_load_strategy = 'eager'
-## options.headless = headless
+options.headless = False
 options.add_argument(f"--user-data-dir={data['path_to_user_data']}")
 options.add_argument(f'--profile-directory={data["path_to_chrome"]}')
 options.add_argument('--disable-blink-features=AutomationControlled')

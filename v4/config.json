@@ -8,7 +8,8 @@
     "Account": "Basic",
 
     "path_to_chrome": "C:/Program Files/Google/Chrome/Application/chrome.exe",
-    "path_to_user_data": "C:/Users/ahmed/AppData/Local/Google/Chrome/User Data"
+    "path_to_user_data": "C:/Users/ahmed/AppData/Local/Google/Chrome/User Data",
+    "rounds_for_snaps": 3
 
 
 }
