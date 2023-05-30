@@ -1,9 +1,0 @@
-
-Snapify Help
-
-This command will make your time with Snapiffy alot easier and efficient. You will see all available commands and what they do.
-
-Snapify : Prints out all commands for Snapiffy onto the terminal.
-Snapify Reset : Resets Snapify to its default state.
-Snapify Capture : Captures a frame from your camera.
-Snapify Send : Send capture to selective people.
