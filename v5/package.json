@@ -1,0 +1,23 @@
+{
+  "name": "snapify",
+  "version": "5.0.1",
+  "description": "boost snapchat snapscore",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unofficialdxnny/Snapify.git"
+  },
+  "keywords": [
+    "snapchat",
+    "snapify"
+  ],
+  "author": "unofficialdxnny (Danial Ahmed)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unofficialdxnny/Snapify/issues"
+  },
+  "homepage": "https://github.com/unofficialdxnny/Snapify#readme"
+}
