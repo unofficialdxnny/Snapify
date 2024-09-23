@@ -1,0 +1,112 @@
+2024-07-01 09:54:17,322 - INFO - File @.txt has 3 lines.
+2024-07-01 09:54:17,414 - INFO - ====== WebDriver manager ======
+2024-07-01 09:54:19,519 - INFO - Get LATEST chromedriver version for google-chrome
+2024-07-01 09:54:19,575 - INFO - Get LATEST chromedriver version for google-chrome
+2024-07-01 09:54:19,619 - INFO - Driver [C:\Users\ahmed\.wdm\drivers\chromedriver\win64\126.0.6478.126\chromedriver-win32/chromedriver.exe] found in cache
+2024-07-01 10:13:10,712 - INFO - File @.txt has 3 lines.
+2024-07-01 10:13:10,815 - INFO - ====== WebDriver manager ======
+2024-07-01 10:13:13,047 - INFO - Get LATEST chromedriver version for google-chrome
+2024-07-01 10:13:13,108 - INFO - Get LATEST chromedriver version for google-chrome
+2024-07-01 10:13:18,348 - INFO - Driver [C:\Users\ahmed\.wdm\drivers\chromedriver\win64\126.0.6478.126\chromedriver-win32/chromedriver.exe] found in cache
+2024-07-01 10:14:48,403 - INFO - Navigated to https://web.snapchat.com
+2024-07-01 10:14:48,518 - INFO - Enabled camera
+2024-07-01 10:14:49,587 - INFO - Captured snap
+2024-07-01 10:14:51,114 - INFO - Clicked send to
+2024-07-01 10:14:51,706 - INFO - Clicked search bar
+2024-07-01 10:14:57,799 - INFO - Cleared search bar
+2024-07-01 10:14:58,922 - INFO - Entered Zafir in search bar
+2024-07-01 10:14:59,969 - INFO - Selected user Zafir
+2024-07-01 10:15:00,998 - INFO - Cleared search bar
+2024-07-01 10:15:02,160 - INFO - Entered Fat Man in search bar
+2024-07-01 10:15:03,200 - INFO - Selected user Fat Man
+2024-07-01 10:15:04,231 - INFO - Cleared search bar
+2024-07-01 10:15:05,436 - INFO - Entered Dias in search bar
+2024-07-01 10:15:06,475 - INFO - Selected user Dias
+2024-07-01 10:15:06,538 - INFO - Clicked send button
+2024-07-01 10:15:06,675 - INFO - Sent 3 snaps in 1 cycles
+2024-07-01 10:15:07,730 - INFO - Captured snap
+2024-07-01 10:15:09,110 - INFO - Clicked send to
+2024-07-01 10:15:09,449 - INFO - Clicked search bar
+2024-07-01 10:15:10,540 - INFO - Cleared search bar
+2024-07-01 10:15:11,644 - INFO - Entered Zafir in search bar
+2024-07-01 10:15:12,691 - INFO - Selected user Zafir
+2024-07-01 10:15:13,721 - INFO - Cleared search bar
+2024-07-01 10:15:14,866 - INFO - Entered Fat Man in search bar
+2024-07-01 10:15:15,905 - INFO - Selected user Fat Man
+2024-07-01 10:15:16,935 - INFO - Cleared search bar
+2024-07-01 10:15:18,139 - INFO - Entered Dias in search bar
+2024-07-01 10:15:19,185 - INFO - Selected user Dias
+2024-07-01 10:15:19,232 - INFO - Clicked send button
+2024-07-01 10:15:19,353 - INFO - Sent 6 snaps in 2 cycles
+2024-07-01 10:15:20,422 - INFO - Captured snap
+2024-07-01 10:15:21,793 - INFO - Clicked send to
+2024-07-01 10:15:22,459 - INFO - Clicked search bar
+2024-07-01 10:15:23,494 - INFO - Cleared search bar
+2024-07-01 10:15:24,600 - INFO - Entered Zafir in search bar
+2024-07-01 10:15:25,639 - INFO - Selected user Zafir
+2024-07-01 10:15:26,673 - INFO - Cleared search bar
+2024-07-01 10:15:27,754 - INFO - Entered Fat Man in search bar
+2024-07-01 10:15:28,795 - INFO - Selected user Fat Man
+2024-07-01 10:15:29,825 - INFO - Cleared search bar
+2024-07-01 10:15:30,970 - INFO - Entered Dias in search bar
+2024-07-01 10:15:32,009 - INFO - Selected user Dias
+2024-07-01 10:15:32,054 - INFO - Clicked send button
+2024-07-01 10:15:32,178 - INFO - Sent 9 snaps in 3 cycles
+2024-07-01 10:15:33,220 - INFO - Captured snap
+2024-07-01 10:15:34,539 - INFO - Clicked send to
+2024-07-01 10:15:34,592 - INFO - Clicked search bar
+2024-07-01 10:15:35,622 - INFO - Cleared search bar
+2024-07-01 10:15:36,726 - INFO - Entered Zafir in search bar
+2024-07-01 10:15:37,765 - INFO - Selected user Zafir
+2024-07-01 10:15:38,797 - INFO - Cleared search bar
+2024-07-01 10:15:39,923 - INFO - Entered Fat Man in search bar
+2024-07-01 10:15:40,963 - INFO - Selected user Fat Man
+2024-07-01 10:15:41,992 - INFO - Cleared search bar
+2024-07-01 10:15:43,198 - INFO - Entered Dias in search bar
+2024-07-01 10:15:44,238 - INFO - Selected user Dias
+2024-07-01 10:15:44,285 - INFO - Clicked send button
+2024-07-01 10:15:44,392 - INFO - Sent 12 snaps in 4 cycles
+2024-07-01 10:15:45,455 - INFO - Captured snap
+2024-07-01 10:15:46,834 - INFO - Clicked send to
+2024-07-01 10:15:47,243 - INFO - Clicked search bar
+2024-07-01 10:15:48,280 - INFO - Cleared search bar
+2024-07-03 05:18:41,102 - INFO - File @.txt has 3 lines.
+2024-07-03 05:18:41,198 - INFO - ====== WebDriver manager ======
+2024-07-03 05:18:41,996 - INFO - Get LATEST chromedriver version for google-chrome
+2024-07-03 05:19:42,156 - INFO - File @.txt has 2 lines.
+2024-07-03 05:19:42,257 - INFO - ====== WebDriver manager ======
+2024-07-03 05:19:42,997 - INFO - Get LATEST chromedriver version for google-chrome
+2024-07-03 05:19:43,030 - INFO - Get LATEST chromedriver version for google-chrome
+2024-07-03 05:19:43,053 - INFO - Get LATEST chromedriver version for google-chrome
+2024-07-03 05:19:43,106 - INFO - WebDriver version 126.0.6478.126 selected
+2024-07-03 05:19:43,108 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/126.0.6478.126/win32/chromedriver-win32.zip
+2024-07-03 05:19:43,108 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/126.0.6478.126/win32/chromedriver-win32.zip
+2024-07-03 05:19:43,144 - INFO - Driver downloading response is 200
+2024-07-03 05:19:43,482 - INFO - Get LATEST chromedriver version for google-chrome
+2024-07-03 05:19:43,619 - INFO - Driver has been saved in cache [C:\Users\ahmed\.wdm\drivers\chromedriver\win64\126.0.6478.126]
+2024-07-03 05:20:50,336 - INFO - Navigated to https://web.snapchat.com
+2024-07-03 05:20:50,442 - INFO - Enabled camera
+2024-07-03 05:20:51,504 - INFO - Captured snap
+2024-07-03 05:20:53,052 - INFO - Clicked send to
+2024-07-03 05:20:53,875 - INFO - Clicked search bar
+2024-07-03 05:20:59,416 - INFO - Cleared search bar
+2024-07-03 05:21:00,549 - INFO - Entered Zafir in search bar
+2024-07-03 05:21:01,602 - INFO - Selected user Zafir
+2024-07-03 05:21:02,632 - INFO - Cleared search bar
+2024-07-03 05:21:03,775 - INFO - Entered Fat Man in search bar
+2024-07-03 05:21:04,815 - INFO - Selected user Fat Man
+2024-07-03 05:21:04,866 - INFO - Clicked send button
+2024-07-03 05:21:05,006 - INFO - Sent 2 snaps in 1 cycles
+2024-07-03 05:21:06,060 - INFO - Captured snap
+2024-07-03 05:21:07,467 - INFO - Clicked send to
+2024-07-03 05:21:07,820 - INFO - Clicked search bar
+2024-07-03 05:21:08,858 - INFO - Cleared search bar
+2024-07-03 05:21:09,958 - INFO - Entered Zafir in search bar
+2024-07-03 05:21:10,998 - INFO - Selected user Zafir
+2024-07-03 05:21:12,030 - INFO - Cleared search bar
+2024-07-03 05:21:13,157 - INFO - Entered Fat Man in search bar
+2024-07-03 05:21:14,197 - INFO - Selected user Fat Man
+2024-07-03 05:21:14,238 - INFO - Clicked send button
+2024-07-03 05:21:14,349 - INFO - Sent 4 snaps in 2 cycles
+2024-07-03 05:21:15,417 - INFO - Captured snap
+2024-07-03 05:21:16,956 - INFO - Clicked send to
