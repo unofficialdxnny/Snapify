@@ -4,7 +4,11 @@
 <img align="right" src="https://imgur.com/ixoqGXc.png" width=315 height=500>
 
 This project is going to slowly go back to Open Source! I'm working on more updates and docs.
+Simple Rules! 
 
+- Don't be a SKID
+- Don't fkin sell this to some kid (it's free and not yours, so have some decency!).
+- Skids get shown right at the top of the repository
 </p>
 
 
@@ -47,6 +51,7 @@ To collect the XPaths for elements on the Snapchat interface:
 
 ### 5. Example XPaths
 The default XPaths included in the script are as follows:
+<img align="left" src="https://imgur.com/GEt4ush.png" width=315 height=500>
 ```javascript
 const xpaths = [
     '/html/body/main/div[1]/div[3]/div/div/div/div[2]/div[1]/div/div/div/div/div/div/div/div/button[1]', // Enable camera
@@ -58,6 +63,8 @@ const xpaths = [
 
 
 ```
+
+
 ## License
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+This project is licensed under the [MIT License](LICENCE).
