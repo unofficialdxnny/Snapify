@@ -1,4 +1,29 @@
 (function () {
+    // Add a visual counter to the page
+    let clickCounter = 0;
+    const counterElement = document.createElement('div');
+    counterElement.style.position = 'fixed';
+    counterElement.style.top = '10px';
+    counterElement.style.right = '10px';
+    counterElement.style.backgroundColor = 'black';
+    counterElement.style.color = 'white';
+    counterElement.style.padding = '10px';
+    counterElement.style.zIndex = 10000;
+    counterElement.textContent = `Elements clicked: ${clickCounter}`;
+    document.body.appendChild(counterElement);
+
+    // Function to update the visual counter
+    function updateCounter() {
+        clickCounter++;
+        counterElement.textContent = `Elements clicked: ${clickCounter}`;
+    }
+
+    // Function to reset the counter
+    function resetCounter() {
+        clickCounter = 0;
+        counterElement.textContent = `Elements clicked: ${clickCounter}`;
+    }
+
     // Function to check if an element is visible
     function isElementVisible(element) {
         return element && element.offsetWidth > 0 && element.offsetHeight > 0;
@@ -22,6 +47,7 @@
 
             if (isElementVisible(element)) {
                 element.click();
+                updateCounter(); // Increment counter for each click
                 console.log(`Element ${index + 1} clicked.`);
 
                 // Delay before clicking the next element
@@ -66,6 +92,7 @@
             if (svg && svg.classList.contains('DYSLz')) {
                 if (isElementVisible(element)) {
                     element.click();
+                    updateCounter(); // Increment counter for each click
                     console.log(`Specific element ${clickIndex + 1} clicked.`);
                 } else {
                     console.log(`Specific element ${clickIndex + 1} not visible.`);
@@ -83,6 +110,8 @@
 
     // Main function to perform the clicks
     function performClicks() {
+        resetCounter(); // Reset the counter at the start of each loop
+
         const xpaths = [
             "/html/body/main/div[1]/div[3]/div/div/div/div[2]/div[1]/div/div/div/div/div/div/div/div/button[1]",
             "/html/body/main/div[1]/div[3]/div/div/div/div[2]/div[1]/div/div/div/div/div/div[2]/div[2]/div/div[1]/button[1]",
@@ -97,6 +126,7 @@
                 const finalElement = getElementByXPath("/html/body/main/div[1]/div[3]/div/div/div/div[2]/div[1]/div/div/div/div/div[1]/div/form/div[2]/button");
                 if (isElementVisible(finalElement)) {
                     finalElement.click();
+                    updateCounter(); // Increment counter for the final click
                     console.log(`Final element clicked.`);
                 } else {
                     console.log(`Final element not visible.`);
@@ -108,69 +138,5 @@
         });
     }
 
-    // Define a function to click an element using its XPath
-    function clickElementByXPath(xpath) {
-        const element = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-        if (element) {
-            element.click();
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    // Define a list of XPath elements to click on
-    const xpaths = [
-        '/html/body/main/div[1]/div[3]/div/div/div/div[2]/div[1]/div/div/div/div/div/div/div/div/button[1]',// enable cam
-        '/html/body/main/div[1]/div[3]/div/div/div/div[2]/div[1]/div/div/div/div/div/div[2]/div[2]/div/div[1]/button[1]', // capture
-        '/html/body/main/div[1]/div[3]/div/div/div/div[2]/div[1]/div/div/div/div/div[2]/div[2]/button[2]', //send to
-        '/html/body/main/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div[1]/form/ul/li[1005]/div',// you can change this xpath to be someone elses
-        '/html/body/main/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div[1]/form/ul/li[1003]/div',// you can change this xpath to be someone elses
-        '/html/body/main/div[1]/div[2]/div/div/div/div/div[1]/div/div/div/div/div[1]/form/ul/li[1002]/div', // you can change this xpath to be someone elses
-        // from this line you can add as many other xpaths of users
-        '/html/body/main/div[1]/div[3]/div/div/div/div[2]/div[1]/div/div/div/div/div[1]/div/form/div[2]/button',
-    ];
-
-    // Define a function to click all elements in the list
-    function clickAllElements() {
-        for (let i = 0; i < xpaths.length; i++) {
-            const elementClicked = clickElementByXPath(xpaths[i]);
-            if (!elementClicked) {
-                console.log(`Element with XPath ${xpaths[i]} not found.`);
-            }
-        }
-    }
-
-    // Define a function to continuously click all elements in the list
-    function clickAllElementsContinuously() {
-        clickAllElements();
-        setTimeout(clickAllElementsContinuously, 1000);
-    }
-
-    // Function to display a banner
-    function displayBanner() {
-        console.clear(); // Clear the console
-        console.log('%c%(                              #%', 'color: yellow;');
-        console.log('%c%###                          ###%', 'color: yellow;');
-        console.log('%c%%%%#####  @@@/@@@/@@@, #####%##%       ███████╗███╗   ██╗ █████╗ ██████╗ ██╗███████╗██╗   ██╗', 'color: yellow;');
-        console.log('%c %&%%%#%&@              @&%%#%%&%       ██╔════╝████╗  ██║██╔══██╗██╔══██╗██║██╔════╝╚██╗ ██╔╝', 'color: yellow;');
-        console.log('%c    %&&%                 %%%&%          ███████╗██╔██╗ ██║███████║██████╔╝██║█████╗   ╚████╔╝', 'color: yellow;');
-        console.log('%c      @@                  @%            ╚════██║██║╚██╗██║██╔══██║██╔═══╝ ██║██╔══╝    ╚██╔╝', 'color: yellow;');
-        console.log('%c      @@                  @&            ███████║██║ ╚████║██║  ██║██║     ██║██║        ██║', 'color: yellow;');
-        console.log('%c  *@/ @@                  @* @@         ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝        ╚═╝', 'color: yellow;');
-        console.log('%c ,@@                         &@@                                                             ', 'color: yellow;');
-        console.log('%c          /                   @@           #1 Free Snapchat booster.', 'color: yellow;');
-        console.log('%c         @@                    @%          Developed by @unofficialdxnny', 'color: yellow;');
-        console.log('%c       @@                       &@#        ', 'color: yellow;');
-        console.log('%c  %@@@*                            @@@@*   V8 | need help? Join Server : https://discord.gg/7HnSE6Jsam', 'color: yellow;');
-        console.log('%c  &@@@@(                          @@@@@     ', 'color: yellow;');
-        console.log('%c       @@@@@@@             #@@@@@@@', 'color: yellow;');
-        console.log('%c               @@@#@@(##@@(', 'color: yellow;');
-    }
-
-
-
-    // Start the clicking process
-    displayBanner();
     performClicks();
 })();
