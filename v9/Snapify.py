@@ -72,15 +72,15 @@ def interactive_menu(options):
         print("="*30 + "\n")
         print_menu(options, selected_option_index)
 
-        key = readchar.readkey() # Read a single key press
+        key = readchar.readkey() 
 
         if key == readchar.key.UP:
             selected_option_index = (selected_option_index - 1 + num_options) % num_options
         elif key == readchar.key.DOWN:
             selected_option_index = (selected_option_index + 1) % num_options
         elif key == readchar.key.ENTER:
-            break # User pressed Enter, exit loop
-        elif key == readchar.key.ESC: # Allow ESC to exit the program
+            break 
+        elif key == readchar.key.ESC:
             print(f"\n{Fore.RED}Exiting...{Style.RESET_ALL}")
             sys.exit()
 
@@ -92,13 +92,13 @@ if __name__ == "__main__":
         "Android Debug Bridge"
     ]
 
-    while True: # Loop to allow returning to the menu
+    while True:
         selected_index = interactive_menu(menu_options)
         chosen_option = menu_options[selected_index]
 
-        clear_screen() # Clear screen after selection
+        clear_screen()
         print(Fore.YELLOW + Style.BRIGHT + banner + Style.RESET_ALL)
-        # print(f"\n{Fore.GREEN}You selected: {chosen_option}{Style.RESET_ALL}\n")
+
 
         if chosen_option == "Chrome Web Driver":
             show_loading_animation("Initializing Chrome Web Driver", duration=3)
