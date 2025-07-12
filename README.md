@@ -18,71 +18,73 @@
        @@@@@@@             #@@@@@@@
                @@@#@@(##@@(
 ```
-<p align="left">
-<img align="right" src="https://imgur.com/ixoqGXc.png" width=315 height=500>
-
-This project is going to slowly go back to Open Source! I'm working on more updates and docs.
-Simple Rules! 
-
-- Don't be a SKID
-- Don't fkin sell this to some kid (it's free and not yours, so have some decency!).
-- Skids get shown right at the top of the repository
-</p>
 
 
+## 🚀 About
 
+**Snapify Pro** is a free, open-source Snapchat score booster that uses `adb`, `OpenCV`, and automation techniques to interact with your Android device and send snaps automatically using visual detection.
 
-## Features
+> **Disclaimer**: This tool is for educational and personal use only. Don’t be a SKID — don’t resell or rebrand this project. All misuse is your responsibility.
 
-- **Enable Camera**: Automatically click the button to enable the camera.
-- **Create Snap**: Click the button to make a snap.
-- **Send To Friends**: Select friends from a predefined list of XPaths.
-- **Send Button**: Click the send button to send your snap.
+---
 
-## Instructions for Use
+## 🧠 Features
 
-### 1. Setting Up the Script
-- Open the Snapchat web version in your browser.
-- Open the **Developer Tools** (`Ctrl+Shift+I` on Windows or `Cmd+Opt+I` on Mac).
-- Navigate to the **Console** tab.
+- 📸 **Screen Capture in Memory** – Uses `adb exec-out screencap` with OpenCV for image processing.
+- 🔍 **Template Matching** – Locates UI elements using high-confidence grayscale template matching.
+- 🤖 **Auto Tap** – Automatically taps detected areas on the screen.
+- 🧼 **Auto Recovery** – Detects errors and presses the Android back button to recover.
+- 📱 **Multi-Device Support** – Works with multiple connected devices via ADB.
 
-### 2. Modifying the Script
-- Copy the Snapify script provided below and paste it into the console.
-- Update the `xpaths` array with the XPaths relevant to your Snapchat interface.
+---
 
-### 3. Gathering XPaths
-To collect the XPaths for elements on the Snapchat interface:
+## 🛠 Requirements
 
-1. In the **Elements** tab of Developer Tools, right-click on the desired element (e.g., buttons for camera, making a snap, sending).
-   
-   <img src="https://imgur.com/bh2JjgF.png" width=300>
-   
-2. Select **Copy** > **Copy XPath**.
+- Python 3.8+
+- Android device with ADB enabled
+- `adb` installed and in your system PATH
+- Python packages:
+  - `opencv-python`
+  - `numpy`
+  - `colorama`
 
-   <img src="https://imgur.com/1SDPzHl.png" width=300>
+Install dependencies:
 
-3. Paste the copied XPath below the `// Add more XPaths for friends here` comment in the script.
-
-### 4. Running the Script
-- After updating the XPaths, run the script in the console.
-- The script will continuously attempt to click the specified elements every second.
-
-### 5. Example XPaths
-The default XPaths included in the script are as follows:
-<img align="left" src="https://imgur.com/GEt4ush.png" width=315 height=500>
-```javascript
-const xpaths = [
-    '/html/body/main/div[1]/div[3]/div/div/div/div[2]/div[1]/div/div/div/div/div/div/div/div/button[1]', // Enable camera
-    '/html/body/main/div[1]/div[3]/div/div/div/div[2]/div[1]/div/div/div/div/div/div[2]/div[2]/div/div[1]/button[1]', // Capture snap
-    '/html/body/main/div[1]/div[3]/div/div/div/div[2]/div[1]/div/div/div/div/div[2]/div[2]/button[2]', // Send to
-    // Add more XPaths for friends here
-    '/html/body/main/div[1]/div[3]/div/div/div/div[2]/div[1]/div/div/div/div/div[1]/div/form/div[2]/button' // Send button
-];
-
-
+```bash
+pip install -r requirements.txt
 ```
+## ⚙️ How to Use
 
+### 1. Connect Your Device
+- Enable **USB Debugging** on your Android phone.
+- Connect your phone to your PC via USB and **allow ADB permissions**.
+- Run the script — it will search for connected ADB devices automatically.
 
-## License
+### 2. Prepare Your Templates
+- Capture a screenshot of the UI element you want to click.
+- Crop the desired region (e.g., **Snap button**) and save it as a **PNG** file (**grayscale preferred**).
+- Load it in the script and assign a name.
 
-This project is licensed under the [MIT License](LICENCE).
+> ✅ **Note:** Image assets for **Snapchat Light Mode** are already included.  
+> You only need to provide custom templates if you're using **Dark Mode**.
+
+## 📄 License
+This project is licensed under the **MIT License**.  
+You are free to use, modify, and share it, but you may **not sell it** or **claim it as your own**.
+
+---
+
+## 🧠 Community Rules
+- Don’t be a **SKID**.  
+- Don’t sell this. It’s **free**.  
+- Skids will be **publicly listed** at the top of the repo.
+
+---
+
+## 💬 Support
+Need help or want to show support?  
+**Join the Snapify Discord:** [https://discord.gg/7HnSE6Jsam](https://discord.gg/7HnSE6Jsam)
+
+---
+
+**Made with ❤️ by [@unofficialdxnny](https://github.com/unofficialdxnny)**
